@@ -189,4 +189,4 @@ Conclusion
 
 This project helped me enhance my SQL skills while uncovering actionable insights into the data analyst job market. By focusing on high-demand, high-paying skills, aspiring data analysts can strategically improve their career prospects.
 
-**Certification**: Completed as part of Luke Barousse’s SQL Course
+Certification: Completed as part of Luke Barousse’s SQL Course
