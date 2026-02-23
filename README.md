@@ -1,4 +1,4 @@
-SQL Portfolio Project: Data Analyst Job Market Analysis
+##SQL Portfolio Project: Data Analyst Job Market Analysis
 Introduction
 
 Welcome to my SQL Portfolio Project! In this project, I explore the data analyst job market, focusing on:
