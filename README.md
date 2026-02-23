@@ -42,7 +42,9 @@ Key Questions:
 | **Visual Studio Code** | Code execution & project management |
 
 **Analysis & Queries**
+
 **1. Top-Paying Data Analyst Jobs**
+
  ```SELECT
     job_id,
     job_title,
@@ -59,7 +61,9 @@ WHERE
 ORDER BY
     salary_year_avg DESC
 LIMIT 10;
-**2. Skills for Top-Paying Jobs**
+
+2. **Skills for Top-Paying Jobs**
+
   ``` WITH top_paying_jobs AS (
     SELECT
         job_id,
@@ -87,7 +91,8 @@ INNER JOIN skills_dim s ON sj.skill_id = s.skill_id
 ORDER BY
     tp.salary_year_avg DESC;
    Shows skills required for top-paying Data Analyst roles.
-**3. Most In-Demand Skills**
+
+3. **Most In-Demand Skills**
   ``` SELECT
     s.skills,
     COUNT(sj.job_id) AS demand_count
@@ -103,7 +108,10 @@ ORDER BY
     demand_count DESC
 LIMIT 5;
 Highlights the most frequently requested skills.
+
+
 **4. Skills Based on Salary**
+
 ```SELECT
     s.skills AS skill,
     ROUND(AVG(j.salary_year_avg), 2) AS avg_salary
@@ -118,7 +126,9 @@ GROUP BY
     s.skills
 ORDER BY
     avg_salary DESC;
-   Reveals which skills are associated with the highest average salaries.
+   Reveals which skills are associated with the highest average salaries
+
+
 **5. Optimal Skills to Learn**
  ```  WITH skills_demand AS (
     SELECT
@@ -161,24 +171,19 @@ ORDER BY
     demand_count DESC,
     avg_salary DESC
 LIMIT 10;
+
 Combines demand and salary to highlight the most strategic skills for career growth.
+
 **Key Learnings**
 
 **Complex Queries: **Use of WITH clauses, joins, and subqueries.
-
 **Data Aggregation:** Effective use of GROUP BY, COUNT(), and AVG().
-
 **Analytical Thinking:** Translating real-world questions into actionable SQL queries.
 Insights
-
 **Top-Paying Jobs:** Remote roles can reach $650,000.
-
 **Skills for High Salaries:** Advanced SQL proficiency is essential.
-
 **Most In-Demand Skills:** SQL consistently ranks highest.
-
 **Specialized Skills Pay More:** Skills like SVN and Solidity command top salaries.
-
 **Optimal Skills:** SQL offers both high demand and high salary potential.
 
 **Conclusion**
