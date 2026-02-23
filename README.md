@@ -43,7 +43,7 @@ Key Questions:
 
 **Analysis & Queries**
 
-##1. Top-Paying Data Analyst Jobs
+1. Top-Paying Data Analyst Jobs
  ```SELECT
     job_id,
     job_title,
@@ -61,7 +61,7 @@ ORDER BY
     salary_year_avg DESC
 LIMIT 10;
 
-#2. Skills for Top-Paying Jobs
+2. Skills for Top-Paying Jobs
 
   ``` WITH top_paying_jobs AS (
     SELECT
@@ -91,7 +91,7 @@ ORDER BY
     tp.salary_year_avg DESC;
    Shows skills required for top-paying Data Analyst roles.
 
-#3. Most In-Demand Skills
+3. Most In-Demand Skills
   ``` SELECT
     s.skills,
     COUNT(sj.job_id) AS demand_count
@@ -109,7 +109,7 @@ LIMIT 5;
 Highlights the most frequently requested skills.
 
 
-#4. Skills Based on Salary
+4. Skills Based on Salary
 
 ```SELECT
     s.skills AS skill,
@@ -173,19 +173,19 @@ LIMIT 10;
 
 Combines demand and salary to highlight the most strategic skills for career growth.
 
-**Key Learnings**
+Key Learnings
 
-**Complex Queries: **Use of WITH clauses, joins, and subqueries.
-**Data Aggregation:** Effective use of GROUP BY, COUNT(), and AVG().
-**Analytical Thinking:** Translating real-world questions into actionable SQL queries.
+Complex Queries: Use of WITH clauses, joins, and subqueries.
+Data Aggregation:Effective use of GROUP BY, COUNT(), and AVG().
+Analytical Thinking: Translating real-world questions into actionable SQL queries.
 Insights
-**Top-Paying Jobs:** Remote roles can reach $650,000.
-**Skills for High Salaries:** Advanced SQL proficiency is essential.
-**Most In-Demand Skills:** SQL consistently ranks highest.
-**Specialized Skills Pay More:** Skills like SVN and Solidity command top salaries.
-**Optimal Skills:** SQL offers both high demand and high salary potential.
+Top-Paying Jobs: Remote roles can reach $650,000.
+Skills for High Salaries:Advanced SQL proficiency is essential.
+Most In-Demand Skills: SQL consistently ranks highest.
+Specialized Skills Pay More:Skills like SVN and Solidity command top salaries.
+Optimal Skills:SQL offers both high demand and high salary potential.
 
-**Conclusion**
+Conclusion
 
 This project helped me enhance my SQL skills while uncovering actionable insights into the data analyst job market. By focusing on high-demand, high-paying skills, aspiring data analysts can strategically improve their career prospects.
 
