@@ -43,8 +43,7 @@ Key Questions:
 
 **Analysis & Queries**
 
-**1. Top-Paying Data Analyst Jobs**
-
+##1. Top-Paying Data Analyst Jobs
  ```SELECT
     job_id,
     job_title,
@@ -62,7 +61,7 @@ ORDER BY
     salary_year_avg DESC
 LIMIT 10;
 
-2. **Skills for Top-Paying Jobs**
+#2. Skills for Top-Paying Jobs
 
   ``` WITH top_paying_jobs AS (
     SELECT
@@ -92,7 +91,7 @@ ORDER BY
     tp.salary_year_avg DESC;
    Shows skills required for top-paying Data Analyst roles.
 
-3. **Most In-Demand Skills**
+#3. Most In-Demand Skills
   ``` SELECT
     s.skills,
     COUNT(sj.job_id) AS demand_count
@@ -110,7 +109,7 @@ LIMIT 5;
 Highlights the most frequently requested skills.
 
 
-**4. Skills Based on Salary**
+#4. Skills Based on Salary
 
 ```SELECT
     s.skills AS skill,
